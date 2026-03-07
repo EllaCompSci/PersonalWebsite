@@ -12,7 +12,6 @@ export default function App() {
   const vantaRef = useRef(null);
   const [scrolled, setScrolled] = useState(false);
   const [page, setPage] = useState('home'); 
-  const rootRef = useRef<HTMLDivElement>(null);
   const navigateTo = (p: string) => {
   setScrolled(false);
   setPage(p);

@@ -9,7 +9,6 @@ export default function About({ onBack }: { onBack: () => void }) {
   const vantaRef = useRef(null);
   const [scrolled, setScrolled] = useState(false);
   const [scrolledMore, setScrolledMore] = useState(false);
-  const topRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (!vantaRef.current) return;

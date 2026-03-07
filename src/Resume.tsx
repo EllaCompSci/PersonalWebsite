@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import VANTA from 'vanta/dist/vanta.net.min';
 import * as THREE from 'three';
-import AboutText from './AboutText';
 import Terminal from './Terminal';
 import ResumeText from './ResumeText';
 import Navbar from './components/NavBar';
@@ -11,7 +10,7 @@ export default function Resume({ onBack }: { onBack: () => void }) {
     const vantaRef = useRef(null);
   const [scrolled, setScrolled] = useState(false);
   const [scrolledMore, setScrolledMore] = useState(false);
-  const topRef = useRef<HTMLDivElement>(null);
+
 
   useEffect(() => {
     if (!vantaRef.current) return;
