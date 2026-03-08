@@ -1,5 +1,5 @@
 export default function AboutText() {
-  const image_path = '../PFP.jpg'
+  const image_path = '../public/PFP.jpg'
   return (
     <div className="about-page">
       <div className="about-content">
